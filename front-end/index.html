@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         📌 SEO BÁSICO E INTELIGÊNCIA ARTIFICIAL
+         ═══════════════════════════════════════════════════════════════ -->
+    <title>Conserto de Computador, Notebook e Impressora | POWERTECH S.E</title>
+    <meta name="description"
+        content="Conserto de computador, notebook e impressora em Currais Novos - RN. Atendimento presencial, orçamento sem compromisso e garantia de 180 dias.">
+    <meta name="keywords"
+        content="conserto de computador, conserto de notebook, reparo de impressora, assistência técnica Currais Novos, Powertech">
+    <meta name="robots" content="index, follow">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         📱 OPEN GRAPH (WhatsApp e Redes Sociais)
+         ═══════════════════════════════════════════════════════════════ -->
+    <meta property="og:title" content="Conserto de Computador e Notebook | Powertech S.E">
+    <meta property="og:description"
+        content="Traga seu equipamento até nossa loja em Currais Novos. Orçamento sem compromisso e garantia de 180 dias.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80&fm=webp">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         🚀 OTIMIZAÇÃO DE DESEMPENHO (Fontes)
+         ═══════════════════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carregamento assíncrono para não bloquear a renderização -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+    </noscript>
+
+    <style>
+        /* ═══════════════════════════════════════════════════════════════
+           🎨 1. VARIÁVEIS GLOBAIS
+           ═══════════════════════════════════════════════════════════════ */
+        :root {
+            --preto: #0a0a0a;
+            --preto-suave: #171717;
+            --vermelho: #dc2626;
+            --vermelho-escuro: #b91c1c;
+            --branco: #ffffff;
+            --cinza-100: #f5f5f5;
+            --cinza-200: #e5e5e5;
+            --cinza-texto: #525252;
+            --cinza-suave: #737373;
+            --fonte: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+            --sombra-card: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
+
+            /* Cores do WhatsApp para usar no botão final */
+            --wpp-verde: #25D366;
+            --wpp-verde-sombra: rgba(37, 211, 102, 0.4);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🧹 2. RESET
+           ═══════════════════════════════════════════════════════════════ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fonte);
+            color: var(--preto);
+            background: var(--branco);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 3. HEADER COM MENU
+           ═══════════════════════════════════════════════════════════════ */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--cinza-200);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--preto);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-mark {
+            width: 32px;
+            height: 32px;
+            background: var(--vermelho);
+            border-radius: 8px;
+            display: grid;
+            place-items: center;
+            color: var(--branco);
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        .logo span {
+            color: var(--vermelho);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--cinza-texto);
+            transition: color 0.2s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--vermelho);
+        }
+
+        /* Botão do WhatsApp de dentro do Menu Sanduíche (Oculto no Desktop) */
+        .menu-whatsapp-btn {
+            display: none;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-cta {
+            background: var(--preto);
+            color: var(--branco);
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s, transform 0.2s;
+            text-align: center;
+        }
+
+        .header-cta:hover {
+            background: var(--vermelho);
+            transform: scale(1.04);
+        }
+
+        /* Estilo do Botão Sanduíche (Oculto no computador) */
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: var(--preto);
+            padding: 4px;
+        }
+
+        .menu-toggle svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 4. HERO
+           ═══════════════════════════════════════════════════════════════ */
+        .hero {
+            padding: 60px 0 80px;
+            background: radial-gradient(circle at 90% 10%, rgba(220, 38, 38, 0.06), transparent 50%), radial-gradient(circle at 10% 90%, rgba(10, 10, 10, 0.04), transparent 50%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--preto);
+            color: var(--branco);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--vermelho);
+        }
+
+        .hero-texto h1 {
+            font-size: clamp(2rem, 4.5vw, 3.4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero-texto h1 .destaque {
+            color: var(--vermelho);
+        }
+
+        .hero-texto .subheadline {
+            font-size: 1.1rem;
+            color: var(--cinza-texto);
+            margin-bottom: 32px;
+            max-width: 92%;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--cinza-100);
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--preto);
+        }
+
+        .badge::before {
+            content: "✓";
+            color: var(--vermelho);
+            font-weight: 800;
+        }
+
+        .hero-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-top: 24px;
+            border-top: 1px solid var(--cinza-200);
+        }
+
+        .rating-block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.1rem;
+            letter-spacing: -2px;
+        }
+
+        .hero-info small {
+            color: var(--cinza-suave);
+            font-size: 0.85rem;
+        }
+
+        .hero-info strong {
+            font-weight: 700;
+        }
+
+        /* FORMULÁRIO */
+        .form-card {
+            background: var(--branco);
+            border: 1px solid var(--cinza-200);
+            border-radius: 20px;
+            padding: 36px;
+            box-shadow: var(--sombra-card);
+            position: sticky;
+            top: 90px;
+        }
+
+        .form-card h3 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .form-card p.form-sub {
+            font-size: 0.9rem;
+            color: var(--cinza-texto);
+            margin-bottom: 24px;
+        }
+
+        .form-card label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 6px;
+            color: var(--preto);
+        }
+
+        .form-card input,
+        .form-card select,
+        .form-card textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid var(--cinza-200);
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            background: var(--branco);
+            margin-bottom: 16px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .form-card input:focus,
+        .form-card select:focus,
+        .form-card textarea:focus {
+            outline: none;
+            border-color: var(--vermelho);
+            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+        }
+
+        .form-card textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-btn {
+            width: 100%;
+            background: var(--vermelho);
+            color: var(--branco);
+            border: none;
+            padding: 16px;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .form-btn:hover {
+            background: var(--vermelho-escuro);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -6px rgba(220, 38, 38, 0.5);
+        }
+
+        .form-secure {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--cinza-suave);
+            margin-top: 12px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 5. BARRA DE CONFIANÇA E SEÇÕES
+           ═══════════════════════════════════════════════════════════════ */
+        .trust-bar {
+            background: var(--preto);
+            color: var(--branco);
+            padding: 18px 0;
+        }
+
+        .trust-bar .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .trust-item::before {
+            content: "✓";
+            color: var(--vermelho);
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        section.section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 60px;
+        }
+
+        .section-header .kicker {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--branco);
+            background: var(--vermelho);
+            padding: 8px 20px;
+            border-radius: 999px;
+            margin-bottom: 20px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            color: var(--cinza-texto);
+            font-size: 1.05rem;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 6. SERVIÇOS
+           ═══════════════════════════════════════════════════════════════ */
+        .servicos-lista {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 60px;
+        }
+
+        .servico {
+            padding: 28px 0;
+            border-bottom: 1px solid var(--cinza-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            transition: padding-left 0.25s;
+        }
+
+        .servico:hover {
+            padding-left: 10px;
+        }
+
+        .servico h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .servico p {
+            font-size: 0.92rem;
+            color: var(--cinza-texto);
+        }
+
+        .servico .arrow {
+            font-size: 1.5rem;
+            color: var(--vermelho);
+            transition: transform 0.25s;
+        }
+
+        .servico:hover .arrow {
+            transform: translateX(6px);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 7. PLANOS EMPRESARIAIS
+           ═══════════════════════════════════════════════════════════════ */
+        .planos-section {
+            background: var(--branco);
+            margin-top: -40px;
+        }
+
+        .planos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .plano-card {
+            background: var(--branco);
+            border: 1px solid var(--cinza-200);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .plano-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--sombra-card);
+        }
+
+        .plano-card.destaque {
+            background: var(--preto);
+            color: var(--branco);
+            border: 2px solid var(--vermelho);
+            transform: scale(1.05);
+            z-index: 2;
+            box-shadow: 0 20px 40px -10px rgba(220, 38, 38, 0.3);
+        }
+
+        .plano-card.destaque:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        .plano-tag {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--vermelho);
+            color: var(--branco);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        .plano-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--cinza-texto);
+        }
+
+        .plano-card.destaque .plano-title {
+            color: var(--branco);
+        }
+
+        .plano-preco {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--preto);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .plano-card.destaque .plano-preco {
+            color: var(--branco);
+        }
+
+        .plano-preco span {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--cinza-texto);
+            margin-top: 8px;
+        }
+
+        .plano-card.destaque .plano-preco span {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .plano-lista {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .plano-lista li {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            color: var(--cinza-texto);
+        }
+
+        .plano-card.destaque .plano-lista li {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .plano-lista li::before {
+            content: "✓";
+            color: var(--vermelho);
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .plano-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background: var(--cinza-100);
+            color: var(--preto);
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .plano-btn:hover {
+            background: var(--cinza-200);
+        }
+
+        .plano-card.destaque .plano-btn {
+            background: var(--vermelho);
+            color: var(--branco);
+        }
+
+        .plano-card.destaque .plano-btn:hover {
+            background: var(--vermelho-escuro);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 8. PROCESSO
+           ═══════════════════════════════════════════════════════════════ */
+        .processo {
+            background: var(--cinza-100);
+        }
+
+        .processo-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .passo {
+            position: relative;
+            background: var(--branco);
+            border-radius: 16px;
+            padding: 32px 24px;
+            border: 1px solid var(--cinza-200);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .passo:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--sombra-card);
+        }
+
+        .passo-num {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--vermelho);
+            line-height: 1;
+            letter-spacing: -0.05em;
+            margin-bottom: 16px;
+            opacity: 0.15;
+        }
+
+        .passo h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .passo h3::before {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 3px;
+            background: var(--vermelho);
+            margin-bottom: 14px;
+            border-radius: 2px;
+        }
+
+        .passo p {
+            font-size: 0.9rem;
+            color: var(--cinza-texto);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 9. SOBRE E GARANTIA
+           ═══════════════════════════════════════════════════════════════ */
+        .sobre-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .sobre-visual {
+            min-height: 450px;
+            background: var(--preto);
+            border-radius: 20px;
+            padding: 40px;
+            color: var(--branco);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sobre-visual::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(220, 38, 38, 0.4), transparent 70%);
+            z-index: 0;
+        }
+
+        .sobre-visual .stats {
+            display: grid;
+            gap: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat strong {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--vermelho);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat span {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+            letter-spacing: 0.03em;
+        }
+
+        .small-note {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .sobre-texto h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .sobre-texto h2 span {
+            color: var(--vermelho);
+        }
+
+        .sobre-texto p {
+            color: var(--cinza-texto);
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .sobre-texto ul {
+            list-style: none;
+            margin-top: 24px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .sobre-texto ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .sobre-texto ul li::before {
+            content: "→";
+            color: var(--vermelho);
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .garantia {
+            background: var(--preto);
+            color: var(--branco);
+            padding: 80px 0;
+        }
+
+        .garantia .container {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .garantia-selo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--vermelho);
+            display: grid;
+            place-items: center;
+            text-align: center;
+            font-weight: 800;
+            line-height: 1.1;
+            flex-shrink: 0;
+            box-shadow: 0 0 0 8px rgba(220, 38, 38, 0.2);
+        }
+
+        .garantia-selo strong {
+            font-size: 2rem;
+            display: block;
+        }
+
+        .garantia-selo small {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .garantia-texto h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .garantia-texto p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .btn-whats {
+            background: var(--branco);
+            color: var(--preto);
+            padding: 16px 28px;
+            border-radius: 10px;
+            font-weight: 700;
+            white-space: nowrap;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn-whats:hover {
+            background: var(--vermelho);
+            color: var(--branco);
+            transform: translateY(-2px);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 10. AVALIAÇÕES E MAPA
+           ═══════════════════════════════════════════════════════════════ */
+        .eapps-widget-toolbar,
+        [class*="eapps-widget-header"],
+        [class*="eapps-widget-button"],
+        [class*="global-styles"],
+        .eapps-widget-badge,
+        [class*="elfsight-app"]>div>div[class*="branding"] {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            height: 0 !important;
+        }
+
+        .elfsight-app-a1bbaecc-ca30-471d-a0a0-82722f633d3a {
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .local-section {
+            background: var(--cinza-100);
+        }
+
+        .local-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: stretch;
+        }
+
+        .mapa-wrap {
+            border-radius: 16px;
+            overflow: hidden;
+            min-height: 420px;
+            background: var(--cinza-200);
+            border: 1px solid var(--cinza-200);
+        }
+
+        .mapa-wrap iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+            min-height: 420px;
+        }
+
+        .info-card {
+            background: var(--branco);
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid var(--cinza-200);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .info-item h4 {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--cinza-suave);
+            margin-bottom: 6px;
+        }
+
+        .info-item p,
+        .info-item address {
+            font-size: 1rem;
+            font-weight: 500;
+            font-style: normal;
+            color: var(--preto);
+            line-height: 1.6;
+        }
+
+        .info-item small {
+            color: var(--cinza-texto);
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--cinza-200);
+        }
+
+        .pagamentos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .pag {
+            padding: 8px 14px;
+            background: var(--cinza-100);
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid var(--cinza-200);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🔷 11. CTA FINAL (BOTÃO VERDE DO WHATSAPP)
+           ═══════════════════════════════════════════════════════════════ */
+        .cta-final {
+            padding: 100px 0;
+            text-align: center;
+            background: var(--cinza-100);
+            border-bottom: 1px solid var(--cinza-200);
+        }
+
+        .cta-final h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            max-width: 780px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--preto);
+        }
+
+        .cta-final p {
+            color: var(--cinza-texto);
+            font-size: 1.1rem;
+            max-width: 560px;
+            margin: 0 auto 40px;
+        }
+
+        .btn-grande {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--wpp-verde);
+            color: var(--preto);
+            padding: 20px 44px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            box-shadow: 0 10px 30px -8px var(--wpp-verde-sombra);
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+        }
+
+        .btn-grande:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 40px -8px rgba(37, 211, 102, 0.6);
+            background: #1ebe56;
+        }
+
+        /* FAQ Compacto */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            background: var(--branco);
+            border: 1px solid var(--cinza-200);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .faq-item:hover,
+        .faq-item[open] {
+            border-color: var(--vermelho);
+            box-shadow: 0 4px 20px -10px rgba(220, 38, 38, 0.2);
+        }
+
+        .faq-question {
+            padding: 18px 24px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--preto);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+
+        .faq-question::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-question::after {
+            content: "+";
+            color: var(--vermelho);
+            font-size: 1.3rem;
+            font-weight: 400;
+            transition: transform 0.3s;
+        }
+
+        .faq-item[open] .faq-question::after {
+            content: "−";
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px 18px 24px;
+            color: var(--cinza-texto);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            border-top: 1px solid transparent;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--preto);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 30px;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer h5 {
+            color: var(--branco);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .footer p,
+        .footer address {
+            font-style: normal;
+            line-height: 1.8;
+        }
+
+        .footer ul {
+            list-style: none;
+            display: grid;
+            gap: 8px;
+        }
+
+        .footer ul a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: color 0.2s;
+        }
+
+        .footer ul a:hover {
+            color: var(--vermelho);
+        }
+
+        .footer .logo {
+            color: var(--branco);
+            margin-bottom: 12px;
+        }
+
+        .footer-copy {
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           🍪 12. BANNER DE COOKIES (Conformidade / LGPD)
+           ═══════════════════════════════════════════════════════════════ */
+        .cookie-banner {
+            position: fixed;
+            bottom: -150px;
+            left: 0;
+            width: 100%;
+            background: var(--preto);
+            color: var(--branco);
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            transition: bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.85rem;
+        }
+
+        .cookie-banner.show {
+            bottom: 0;
+        }
+
+        .cookie-banner p {
+            margin: 0;
+            flex: 1;
+        }
+
+        .cookie-banner a {
+            color: var(--vermelho);
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .cookie-btn {
+            background: var(--vermelho);
+            color: var(--branco);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.2s;
+            font-family: inherit;
+            font-size: 0.9rem;
+        }
+
+        .cookie-btn:hover {
+            background: var(--vermelho-escuro);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           📱 13. RESPONSIVO E MENU SANDUÍCHE
+           ═══════════════════════════════════════════════════════════════ */
+        @media (max-width: 1000px) {
+
+            .hero-grid,
+            .sobre-grid,
+            .local-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-card {
+                position: static;
+            }
+
+            .processo-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .garantia .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 24px;
+            }
+
+            .garantia-selo {
+                margin: 0 auto;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .servicos-lista {
+                grid-template-columns: 1fr;
+            }
+
+            .planos-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .plano-card.destaque {
+                transform: scale(1);
+            }
+
+            .plano-card.destaque:hover {
+                transform: translateY(-5px);
+            }
+
+            .planos-section {
+                margin-top: 0;
+            }
+
+            /* Lógica visual do menu dropdown no smartphone */
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--branco);
+                padding: 24px;
+                box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+                border-top: 1px solid var(--cinza-200);
+                gap: 20px;
+                text-align: center;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            /* Estiliza o botão do WhatsApp exclusivamente para aparecer dentro do menu mobile */
+            .menu-whatsapp-btn {
+                display: block;
+                background: var(--wpp-verde);
+                color: var(--preto) !important;
+                padding: 14px 20px;
+                border-radius: 8px;
+                font-weight: 700;
+                margin-top: 10px;
+                box-shadow: 0 4px 15px -5px var(--wpp-verde-sombra);
+                transition: background 0.3s;
+            }
+
+            .menu-whatsapp-btn:hover {
+                background: #1ebe56;
+            }
+        }
+
+        /* 🔥 OTIMIZAÇÕES EXCLUSIVAS PARA SMARTPHONE (MENORES) 🔥 */
+        @media (max-width: 600px) {
+            section.section {
+                padding: 60px 0;
+            }
+
+            .processo-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .hero {
+                padding: 40px 0 60px;
+            }
+
+            .form-card {
+                padding: 24px;
+            }
+
+            .form-card input,
+            .form-card select,
+            .form-card textarea {
+                font-size: 16px;
+            }
+
+            .header .container {
+                padding: 12px 16px;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+
+            /* Oculta o botão preto de WhatsApp da barra superior no celular */
+            .header-cta {
+                display: none;
+            }
+
+            .hero-texto h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .trust-bar .container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            /* Espaçamento para as caixas de serviço no celular */
+            .servicos-lista {
+                gap: 16px;
+            }
+
+            /* Bordas vermelhas finas exclusivas para smartphone na listagem de serviços */
+            .servico {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                gap: 8px;
+                border: 1px solid var(--vermelho);
+                border-radius: 12px;
+                padding: 20px;
+            }
+
+            .servico .arrow {
+                display: none;
+            }
+
+            .mapa-wrap,
+            .mapa-wrap iframe {
+                min-height: 250px;
+            }
+
+            .btn-grande {
+                width: 100%;
+                justify-content: center;
+                padding: 16px 20px;
+                font-size: 1rem;
+            }
+
+            .garantia-texto h2 {
+                font-size: 1.5rem;
+            }
+
+            .sobre-visual {
+                min-height: 350px;
+                padding: 24px;
+            }
+
+            .cta-final {
+                padding: 60px 0;
+            }
+
+            .cta-final h2 {
+                font-size: 1.8rem;
+            }
+
+            .footer-grid {
+                gap: 30px;
+            }
+
+            /* Ajuste do banner de cookies para tela pequena */
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .cookie-btn {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <!-- Schema Markup (IA e Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Powertech S.E - Informática",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80&fm=webp",
+      "@id": "https://www.seusite.com.br",
+      "url": "https://www.seusite.com.br",
+      "telephone": "+5584991601550",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Abílio Chacon, N 270 - JK",
+        "addressLocality": "Currais Novos",
+        "addressRegion": "RN",
+        "postalCode": "59380-000",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HEADER COM MENU
+         ═══════════════════════════════════════════════════════════════ -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-mark">P</div>
+                Informática <span>Powertech S.E</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#servicos" onclick="toggleMenu()">Nossos Serviços</a>
+                <a href="#planos" onclick="toggleMenu()">Planos</a>
+                <a href="#faq" onclick="toggleMenu()">Dúvidas</a>
+
+                <!-- Botão do WhatsApp exclusivo para o menu no celular (Rel atualizado para segurança) -->
+                <a href="https://wa.me/5584991601550?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20gostaria%20de%20um%20or%C3%A7amento."
+                    target="_blank" rel="noopener noreferrer" class="menu-whatsapp-btn" onclick="toggleMenu()">
+                    Falar no WhatsApp
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Botão Preto do Header (Rel atualizado para segurança) -->
+                <a href="https://wa.me/5584991601550?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20gostaria%20de%20um%20or%C3%A7amento."
+                    target="_blank" rel="noopener noreferrer" class="header-cta">
+                    Falar no WhatsApp
+                </a>
+
+                <!-- Botão Sanduíche visível apenas no mobile -->
+                <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HERO
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-texto">
+                    <div class="eyebrow">Atendimento presencial · Currais Novos/RN</div>
+                    <h1>Conserto de <span class="destaque">Computador, Notebook e Impressora</span> com agilidade e
+                        garantia.</h1>
+                    <p class="subheadline">Traga seu equipamento até nossa loja. Diagnóstico preciso, peças de qualidade
+                        e <strong>garantia de 180 dias</strong> em todos os serviços realizados por nossos técnicos.</p>
+                    <div class="hero-badges">
+                        <div class="badge">Diagnóstico sem compromisso</div>
+                        <div class="badge">Garantia de 180 dias</div>
+                        <div class="badge">Atendimento na loja</div>
+                    </div>
+                    <div class="hero-info">
+                        <div class="rating-block">
+                            <span class="stars">★★★★★</span>
+                            <div>
+                                <strong>5 / 5</strong>
+                                <small>Baseado em 20 avaliações no Google</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card" id="formulario">
+                    <h3>Peça seu orçamento agora</h3>
+                    <p class="form-sub">Preencha abaixo e receba o atendimento direto no WhatsApp em poucos minutos.</p>
+                    <form onsubmit="enviarWhatsApp(event)">
+                        <label for="nome">Seu nome</label>
+                        <input type="text" id="nome" placeholder="Como podemos te chamar?" required>
+                        <label for="whatsapp">Seu WhatsApp</label>
+                        <input type="tel" id="whatsapp" placeholder="(84) 9 0000-0000" required>
+                        <label for="equipamento">Equipamento</label>
+                        <select id="equipamento" required>
+                            <option value="">Selecione...</option>
+                            <option>Notebook</option>
+                            <option>Computador / Desktop</option>
+                            <option>Impressora</option>
+                            <option>Outro</option>
+                        </select>
+                        <label for="descricao">O que está acontecendo?</label>
+                        <textarea id="descricao" placeholder="Descreva rapidamente o problema (opcional)"></textarea>
+                        <button type="submit" class="form-btn">Enviar para o WhatsApp →</button>
+                        <p class="form-secure">🔒 Seus dados são usados apenas para o contato.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         BARRA DE CONFIANÇA
+         ═══════════════════════════════════════════════════════════════ -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-item">Atendimento 100% presencial</div>
+            <div class="trust-item">Garantia de 180 dias</div>
+            <div class="trust-item">Orçamento totalmente Grátis</div>
+            <div class="trust-item">+ 5 anos de experiência</div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SERVIÇOS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section" id="servicos" style="padding-bottom: 40px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="kicker">Nossos serviços</span>
+                <h2>O que fazemos</h2>
+                <p>Soluções completas para seu equipamento, sempre com você acompanhando de perto na nossa loja.</p>
+            </div>
+            <div class="servicos-lista">
+                <div class="servico">
+                    <div>
+                        <h3>Conserto de Notebooks</h3>
+                        <p>Troca de tela, teclado, bateria, dobradiça e reparo em placa-mãe.</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="servico">
+                    <div>
+                        <h3>Manutenção de Computadores</h3>
+                        <p>Limpeza interna, formatação, upgrade de SSD, memória e fontes.</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="servico">
+                    <div>
+                        <h3>Reparo de Impressoras</h3>
+                        <p>Limpeza de cabeçote, troca de peças e configuração em rede.</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="servico">
+                    <div>
+                        <h3>Recuperação de Dados</h3>
+                        <p>Recuperação de arquivos em HDs e SSDs com total sigilo.</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="servico">
+                    <div>
+                        <h3>Upgrade e Performance</h3>
+                        <p>Instalação de SSD, mais memória e otimização do sistema.</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="servico">
+                    <div>
+                        <h3>Venda de Peças</h3>
+                        <p>Peças e acessórios originais e compatíveis com garantia.</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         PLANOS EMPRESARIAIS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section planos-section" id="planos" style="padding-top: 40px; padding-bottom: 80px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 40px;">
+                <span class="kicker">Para Empresas</span>
+                <h2>Planos de Manutenção Preventiva</h2>
+                <p>Sua empresa não pode parar. Oferecemos atendimento agendado fora do horário comercial para não
+                    interromper o seu negócio.</p>
+            </div>
+            <div class="planos-grid">
+                <!-- PLANO ESSENCIAL -->
+                <div class="plano-card">
+                    <h3 class="plano-title">Plano Essencial</h3>
+                    <div class="plano-preco">R$ 149<span>,90/mês</span></div>
+                    <ul class="plano-lista">
+                        <li>Manutenção de 1 computador</li>
+                        <li>Limpeza e otimização do sistema</li>
+                        <li>Verificação de antivírus</li>
+                        <li>Atendimento presencial agendado</li>
+                    </ul>
+                    <a href="https://wa.me/5584991601550?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20gostaria%20do%20Plano%20Essencial."
+                        target="_blank" rel="noopener noreferrer" class="plano-btn">Contratar Plano</a>
+                </div>
+                <!-- PLANO EMPRESARIAL (DESTAQUE) -->
+                <div class="plano-card destaque">
+                    <div class="plano-tag">Mais Escolhido</div>
+                    <h3 class="plano-title">Plano Empresarial</h3>
+                    <div class="plano-preco">R$ 249<span>,90/mês</span></div>
+                    <ul class="plano-lista">
+                        <li>Manutenção de até 3 computadores</li>
+                        <li>Atendimento prioritário</li>
+                        <li><strong>Serviço agendado após as 18h</strong></li>
+                        <li>Backup básico de arquivos</li>
+                        <li>Suporte a impressoras em rede</li>
+                    </ul>
+                    <a href="https://wa.me/5584991601550?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20gostaria%20do%20Plano%20Empresarial."
+                        target="_blank" rel="noopener noreferrer" class="plano-btn">Contratar Plano</a>
+                </div>
+                <!-- PLANO PREMIUM -->
+                <div class="plano-card">
+                    <h3 class="plano-title">Plano Premium</h3>
+                    <div class="plano-preco">R$ 349<span>,90/mês</span></div>
+                    <ul class="plano-lista">
+                        <li>Manutenção de até 5 computadores</li>
+                        <li><strong>Plantão de suporte programado</strong></li>
+                        <li>Serviço fora do horário comercial</li>
+                        <li>Backup em nuvem e segurança</li>
+                        <li>Gestão de rede e servidores</li>
+                    </ul>
+                    <a href="https://wa.me/5584991601550?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20gostaria%20do%20Plano%20Premium."
+                        target="_blank" rel="noopener noreferrer" class="plano-btn">Contratar Plano</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         PROCESSO
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section processo" style="padding-top: 40px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="kicker">Como funciona</span>
+                <h2>Simples, rápido e transparente</h2>
+                <p>Do primeiro contato à entrega do equipamento, você acompanha cada etapa.</p>
+            </div>
+            <div class="processo-grid">
+                <div class="passo">
+                    <div class="passo-num">01</div>
+                    <h3>Você entra em contato</h3>
+                    <p>Preencha o formulário ou mande mensagem no WhatsApp com o problema do seu equipamento.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-num">02</div>
+                    <h3>Traga até a loja</h3>
+                    <p>Você leva o equipamento até nosso endereço e conversa diretamente com o técnico.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-num">03</div>
+                    <h3>Diagnóstico e orçamento</h3>
+                    <p>Avaliamos e apresentamos o orçamento sem compromisso. Você aprova antes de qualquer reparo.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-num">04</div>
+                    <h3>Reparo e entrega</h3>
+                    <p>Serviço concluído com peças de qualidade e entrega com garantia de 180 dias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SOBRE
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-visual"
+                    style="background-image: linear-gradient(to bottom, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.95) 100%), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80&fm=webp'); background-size: cover; background-position: center;">
+                    <div class="stats">
+                        <div class="stat"><strong>+5</strong><span>Anos de experiência</span></div>
+                        <div class="stat"><strong>+350</strong><span>Equipamentos reparados</span></div>
+                        <div class="stat"><strong>180</strong><span>Dias de garantia</span></div>
+                    </div>
+                    <div class="small-note">Powertech S.E · Currais Novos/RN</div>
+                </div>
+                <div class="sobre-texto">
+                    <h2>Uma loja de bairro com <span>padrão de excelência</span></h2>
+                    <p>Somos uma loja física em Currais Novos - RN especializada em <strong>conserto de computadores,
+                            notebooks e impressoras</strong>. Nosso compromisso é atender você pessoalmente, com
+                        transparência total no orçamento e sem promessas milagrosas.</p>
+                    <p>Cada equipamento é avaliado por um técnico experiente, e você aprova o serviço antes de qualquer
+                        reparo.</p>
+                    <ul>
+                        <li>Atendimento presencial, olho no olho</li>
+                        <li>Orçamento sem compromisso</li>
+                        <li>Peças de qualidade com garantia</li>
+                        <li>Serviço independente, sem vínculo com fabricantes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         GARANTIA 180 DIAS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="garantia">
+        <div class="container">
+            <div class="garantia-selo">
+                <div>
+                    <strong>180</strong>
+                    <small>dias</small>
+                </div>
+            </div>
+            <div class="garantia-texto">
+                <h2>Garantia de 180 dias em todos os serviços</h2>
+                <p>Confiança total no nosso trabalho. Qualquer problema relacionado ao serviço realizado dentro do
+                    período, você retorna e resolvemos.</p>
+            </div>
+            <a href="https://wa.me/5584991601550?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20quero%20saber%20mais%20sobre%20a%20garantia."
+                target="_blank" rel="noopener noreferrer" class="btn-whats">Tirar dúvidas no WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         AVALIAÇÕES (ELFSIGHT WIDGET)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section" style="padding-top: 45px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <span class="kicker">O que dizem sobre nós</span>
+                <h2>Avaliações reais de clientes</h2>
+                <p>Transparência de quem já passou pela nossa loja.</p>
+            </div>
+            <!-- Script com 'defer' para não bloquear o carregamento principal da tela -->
+            <script src="https://elfsightcdn.com/platform.js" defer></script>
+            <div class="elfsight-app-a1bbaecc-ca30-471d-a0a0-82722f633d3a" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         LOCALIZAÇÃO E MAPA
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section local-section" style="padding-top: 40px; padding-bottom: 5px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="kicker">Onde estamos</span>
+                <h2>Venha nos visitar</h2>
+                <p>Atendimento exclusivamente presencial, em nosso endereço físico.</p>
+            </div>
+            <div class="local-grid">
+                <div class="mapa-wrap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0462617278167!2d-36.523544425163735!3d-6.257636561265674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b1d72e6dbe1c3b%3A0xa2058122e0fd3074!2sPowertech%20S.E%20-%20Inform%C3%A1tica%20%7C%20Assist.%20T%C3%A9cnica%20%7C%20Seguran%C3%A7a%20Eletr%C3%B4nica!5e0!3m2!1spt-BR!2sbr!4v1792928867415!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da loja"></iframe>
+                </div>
+                <div class="info-card">
+                    <div class="info-item">
+                        <h4>Endereço</h4>
+                        <address>Rua Abílio Chacon, N 270 - JK<br>Currais Novos - RN, CEP 59380-000</address>
+                        <small>Estacionamento na frente · Fácil acesso</small>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-item">
+                        <h4>Horário de funcionamento</h4>
+                        <p>Segunda a Sexta · 07h45 às 12h das 14h00 às 18h00<br>Sábado · 07h45 às 12h</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-item">
+                        <h4>Formas de pagamento</h4>
+                        <div class="pagamentos">
+                            <span class="pag">PIX</span>
+                            <span class="pag">Dinheiro</span>
+                            <span class="pag">Débito</span>
+                            <span class="pag">Crédito</span>
+                            <span class="pag">Até 7x sem juros</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-item">
+                        <h4>Contato</h4>
+                        <p>(84) 9 9160-1550 <small>WhatsApp e telefone</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         CTA FINAL
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Traga seu equipamento hoje mesmo!</h2>
+            <p>Diagnóstico rápido, orçamento sem compromisso e garantia de 180 dias. Fale agora com a nossa loja pelo
+                WhatsApp.</p>
+            <a href="https://wa.me/5584991601550?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20gostaria%20de%20um%20or%C3%A7amento."
+                target="_blank" rel="noopener noreferrer" class="btn-grande">Falar no WhatsApp agora →</a>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         FAQ (PERGUNTAS FREQUENTES)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section" id="faq" style="background: var(--branco); padding-top: 80px; padding-bottom: 80px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 40px;">
+                <span class="kicker">Dúvidas Frequentes</span>
+                <h2>Perguntas e Respostas</h2>
+                <p>Ficou com alguma dúvida? Separamos as principais perguntas dos nossos clientes.</p>
+            </div>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question">Quanto tempo leva para consertar meu equipamento?</summary>
+                    <div class="faq-answer">A maioria dos reparos simples, como formatação ou troca de peças, é
+                        concluída no mesmo dia. Casos mais complexos, como recuperação de dados ou reparo em placa-mãe,
+                        podem levar de 2 a 5 dias úteis. O prazo exato é informado no orçamento após o diagnóstico.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Preciso agendar horário para levar o equipamento?</summary>
+                    <div class="faq-answer">Não é obrigatório. Você pode trazer seu computador ou notebook diretamente à
+                        nossa loja durante o horário de funcionamento. No entanto, se preferir mais comodidade e
+                        atendimento prioritário, você pode agendar pelo WhatsApp (84) 9 9160-1550.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">O conserto tem garantia?</summary>
+                    <div class="faq-answer">Sim! Oferecemos <strong>garantia de 180 dias</strong> em todos os serviços
+                        de conserto e peças substituídas. Nosso compromisso é com a sua total satisfação e com a
+                        durabilidade do reparo.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Vocês atendem em domicílio ou de forma remota?</summary>
+                    <div class="faq-answer">Nosso atendimento é focado em nossa <strong>loja física</strong>, onde temos
+                        toda a bancada, ferramentas e peças necessárias para um reparo seguro. Para sua segurança, não
+                        realizamos acesso remoto aos seus arquivos pessoais. Traga seu equipamento até nós para um
+                        diagnóstico presencial.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Vou perder meus arquivos e fotos ao formatar o computador?</summary>
+                    <div class="faq-answer">A formatação apaga os arquivos, por isso sempre fazemos um backup antes,
+                        caso seja possível acessar o sistema. Nós nunca apagamos seus dados sem a sua autorização
+                        expressa no orçamento. Em casos de HD danificado, temos serviço especializado em recuperação de
+                        dados.</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Vocês consertam todas as marcas de notebook e computador?</summary>
+                    <div class="faq-answer">Sim. Trabalhamos com manutenção de todas as marcas do mercado (Dell, Acer,
+                        Lenovo, HP, Samsung, Apple, etc.). Somos uma loja independente, sem vínculo direto com
+                        fabricantes, o que nos permite oferecer um preço mais justo e prazos mais ágeis.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <div class="logo-mark">P</div>
+                        Informática <span>Powertech S.E</span>
+                    </div>
+                    <p>Conserto de computador, notebook e impressora com atendimento presencial e garantia de 180 dias.
+                        Serviço independente, sem vínculo com fabricantes.</p>
+                </div>
+                <div>
+                    <h5>Contato</h5>
+                    <address>
+                        Rua Abílio Chacon, 270 - JK<br>
+                        Currais Novos - RN<br>
+                        CEP 59380-000<br>
+                        (84) 9 9160-1550<br>
+                        CNPJ: 41.806.981/0001-46
+                    </address>
+                </div>
+                <div>
+                    <h5>Navegação</h5>
+                    <ul>
+                        <li><a href="#formulario">Pedir orçamento</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="https://www.google.com/search?q=Powertech+S.E+-+Inform%C3%A1tica+%7C+Assist.+T%C3%A9cnica+%7C+Seguran%C3%A7a+Eletr%C3%B4nica&stick=H4sIAAAAAAAA_-NgU1IxqDBPMkwxN0o1S0lKNUw2TrIyqEg0MjC1MDQySjVISzE2MDdZxOoRkF-eWlSSmpyhEKznqqCr4JmXll-Ue3hhSWZyokKNgmNxcWZxiZ5CyOGVyXkQoeDU9NKixLzDyxMVXHNSS4oObwFJAACF9qP6cwAAAA&hl=pt-BR&mat=CSGy0JKTRf7-ElYBzAmVZgObKVbhuCEA6mmGxyp0ydJxFYqvPuadUQ8DpEIg2gVxcKdpQAcQKbjryHteNfFYP1yAjuhbLdbJ7iaKNihLsr3qoXSdAikKDWJuwvjzFcyKBQ&authuser=0&ved=1t:350944"
+                                target="_blank" rel="noopener noreferrer">Google Meu Negócio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Powertech S.E. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         BANNER DE COOKIES (Fixo no rodapé)
+         ═══════════════════════════════════════════════════════════════ -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Usamos cookies para melhorar sua experiência no site e garantir maior segurança. Ao continuar navegando, você
+            concorda com a nossa <a href="#">Política de Privacidade</a>.</p>
+        <button id="aceitar-cookies" class="cookie-btn">Entendi e aceito</button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         JAVASCRIPT (Formulário WhatsApp, Menu e Cookies)
+         ═══════════════════════════════════════════════════════════════ -->
+    <script>
+        // --- Função do WhatsApp ---
+        function enviarWhatsApp(e) {
+            e.preventDefault();
+            const nome = document.getElementById('nome').value.trim();
+            const tel = document.getElementById('whatsapp').value.trim();
+            const equip = document.getElementById('equipamento').value;
+            const desc = document.getElementById('descricao').value.trim();
+
+            const texto =
+                `Olá! Vim do Google 👋\n\n` +
+                `*Nome:* ${nome}\n` +
+                `*Meu WhatsApp:* ${tel}\n` +
+                `*Equipamento:* ${equip}\n` +
+                (desc ? `*Descrição:* ${desc}` : '');
+
+            const url = `https://wa.me/5584991601550?text=${encodeURIComponent(texto)}`;
+            window.open(url, '_blank');
+        }
+
+        // --- Função Menu Sanduíche ---
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+
+        // --- Lógica do Banner de Cookies ---
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookie-banner");
+            const aceitarBtn = document.getElementById("aceitar-cookies");
+
+            // Verifica se o usuário já aceitou antes (no localStorage)
+            if (!localStorage.getItem("cookiesAceitos")) {
+                // Dá um pequeno atraso (1 segundo) para aparecer suavemente após carregar o site
+                setTimeout(() => {
+                    cookieBanner.classList.add("show");
+                }, 1000);
+            }
+
+            // Quando clicar no botão de aceitar
+            aceitarBtn.addEventListener("click", function () {
+                // Salva a permissão no navegador
+                localStorage.setItem("cookiesAceitos", "true");
+                // Esconde o banner
+                cookieBanner.classList.remove("show");
+            });
+        });
+    </script>
+</body>
+
+</html>
